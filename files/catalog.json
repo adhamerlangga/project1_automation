@@ -11,8 +11,8 @@
     {
         "source": "cd",
         "title": "ini cd 1",
-        "subject": null,
-        "upc": null,
-        "artist": null
+        "subject": "musik",
+        "upc": "",
+        "artist": "ariel"
     }
 ]

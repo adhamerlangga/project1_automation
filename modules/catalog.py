@@ -20,7 +20,7 @@ class Catalog():
                     elif type(item) == Dvd:
                         list_result.append('Title:' + item.title + ' Genre:' + item.genre + ' Type Catalog: Dvd')
                     elif type(item) == Cd:
-                        list_result.append('Title:' + item.title, ' Artist:' + item.artist + ' Type Catalog: Cd')
+                        list_result.append('Title:' + item.title + ' Artist:' + item.artist + ' Type Catalog: Cd')
                     else:
                         pass
         return list_result

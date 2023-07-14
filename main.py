@@ -62,11 +62,11 @@ dvd1 = Dvd(
 book = [book1,book2,book3]
 magazine = [magazine1,magazine2]
 dvd = [dvd1]
+cd = []
 
 # get data from json
 f = open('files/catalog.json')
 data_json = json.load(f)
-print(data_json)
 
 # create object from data json
 
@@ -79,15 +79,21 @@ for item in data_json:
             issbn = item['issbn'], 
             authors = item['authors'], 
             dds_number = item['dds_number']))
-    # elif .. magazine
+        
+    elif item["source"] == "cd":
+        cd.append(Cd(
+            title = item['title'], 
+            subject = item['subject'], 
+            upc = item['upc'], 
+            artist = item['artist']))
     # elif ...
+
 # collect all data
-catalog_all = [book, magazine, dvd]
+catalog_all = [book, magazine, dvd, cd]
 
 # run search & result
 input_search = 'test'
 results = Catalog(catalog_all).search(input_search)
-print(results)
 
 for index, result in enumerate(results):
     print(f'result ke-{index+1} | {result}')
