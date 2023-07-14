@@ -1,0 +1,18 @@
+[
+    {
+        "source": "book",
+        "title": "ini book 1",
+        "subject": null,
+        "upc": null,
+        "issbn": null,
+        "authors": null,
+        "dds_number": null
+    },
+    {
+        "source": "cd",
+        "title": "ini cd 1",
+        "subject": null,
+        "upc": null,
+        "artist": null
+    }
+]
